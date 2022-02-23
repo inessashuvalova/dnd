@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+  
+  #container {
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items:baseline;
+    width: 910px;
+    margin: 0 auto; 
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .col {
+    position: relative;
+    width: 310px;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .col:first-child {
+    border-right: 5px solid #FFF;
+  }
+  
+  .col:last-child {
+    border-left: 5px solid #FFF;
+  }
+  
+  
+  .col .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: rgb(48, 48, 48);
+    color: #FFF;
+    text-align: center;
+  }
+  
+  .tsk {
+    line-height: 40px;
+    padding-top:20px;
+    margin: 0px;
+    background-color: #ccc;
+    height:max-content;
+    position: relative;
+    width:auto;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    border-bottom: 4px solid #000000;
+  }
+  
+  .tsk.dragged {
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+    border: none;
+    background: #FFF;
+  }
+  
+  #shadow {
+    background-color: beige;
+    pointer-events: none;
+    position: relative;
+    box-sizing: border-box;
+    width:100%;
+  }
+  
+  #task-remove {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: rgb(129, 129, 129);
+    position: absolute;
+    top:0;
+    right: 0;
+  }
+  
+  .add-task {
+    width: 100%;
+    background: none;
+    position: relative;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    font-weight: bolder;
+    text-shadow: 1px 0px rgb(170, 170, 170);
+    color: rgb(48, 48, 48);
+  }
+  
+  #todo {
+    background-color: rgb(255, 133, 157);
+  }
+  
+  #in-progress {
+    background-color: burlywood;
+  }
+  
+  #done {
+    background-color: rgb(142, 235, 157);
+  }
+  
+  #new-task-form {
+    flex-direction: row;
+    padding: 10px;
+  }
+  
+  #new-task-form textarea {
+    min-width: 100%;
+    resize: vertical;
+    box-sizing: border-box;
+  }
